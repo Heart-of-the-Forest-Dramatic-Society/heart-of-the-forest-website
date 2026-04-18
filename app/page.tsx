@@ -11,7 +11,7 @@ export default function Home() {
         alt="Heart of the forest"
         width={300}
         height={300}
-        loading="eager"
+        priority
         className="rounded-full mt-8 hover:scale-105 transition-transform duration-300"
       />
       <p className="text-center mt-4 text-lg  max-w-2xl">
