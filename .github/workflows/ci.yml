@@ -16,7 +16,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 9 # Matches your local pnpm version
+          version: 10 # Matches your local pnpm version
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
