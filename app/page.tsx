@@ -15,8 +15,8 @@ export default function Home() {
         className="rounded-full mt-8 hover:scale-105 transition-transform duration-300"
       />
       <p className="text-center mt-4 text-lg  max-w-2xl">
-        This is a website for the Heart of the forest Dramatic Society, is
-        coming soon! We are a community theatre group based in the heart of the
+        This website for the Heart of the forest Dramatic Society is coming
+        soon! We are a community theatre group based in the heart of the
         forest, and we are dedicated to bringing high-quality theatre
         productions to our local community. Stay tuned for updates on our
         upcoming shows and events!
