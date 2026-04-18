@@ -12,7 +12,7 @@ export default function Home() {
         width={300}
         height={300}
         loading="eager"
-        className="rounded-full mt-8 zoom-in hover:scale-105 transition-transform duration-300"
+        className="rounded-full mt-8 hover:scale-105 transition-transform duration-300"
       />
       <p className="text-center mt-4 text-lg  max-w-2xl">
         This is a website for the Heart of the forest Dramatic Society, is
