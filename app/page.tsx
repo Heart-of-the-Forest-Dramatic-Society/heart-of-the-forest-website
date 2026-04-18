@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-4 w-7xl mx-auto">
+    <main className="flex flex-col items-center justify-center min-h-screen p-4 w-full max-w-7xl mx-auto">
       <h1 className="text-4xl font-bold text-center mt-8">
         Welcome to the Heart of the forest Dramatic Society!
       </h1>
