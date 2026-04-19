@@ -1,11 +1,20 @@
+import { Footer } from "@/components/layout/Footer";
+import { Navbar } from "@/components/layout/Navbar";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
+
 export default function PagesLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 w-full max-w-7xl mx-auto">
+    <main className="relative flex flex-col">
+      <Navbar />
       {children}
-    </div>
+      <Footer />
+      <div className="fixed bottom-0 right-0 p-6 z-50">
+        <ThemeToggle />
+      </div>
+    </main>
   );
 }
