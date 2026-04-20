@@ -7,8 +7,7 @@ export function Footer() {
           Society. All rights reserved.
         </p>
         <p className="text-sm mt-2">
-          Designed and developed by BenCyber (Ben) from the Heart of the Forest
-          Team.
+          Designed and developed by Ben from the Heart of the Forest Team.
         </p>
       </div>
     </footer>
