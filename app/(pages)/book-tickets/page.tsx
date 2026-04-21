@@ -7,8 +7,8 @@ import { Switch } from "@/components/ui/switch";
 export default function BookTickets() {
   const [isChecked, setIsChecked] = useState(false);
   return (
-    <div className="relative flex items-center flex-col justify-center min-h-screen">
-      <div className="fixed bottom-0 left-0 p-6">
+    <div className="relative flex items-center flex-col justify-center min-h-[calc(100dvh-14rem)]">
+      <div className="fixed bottom-0 left-0 p-6 z-50">
         <Switch checked={isChecked} onCheckedChange={setIsChecked} />
         <span className="ml-2">Ticket Enabled?</span>
       </div>

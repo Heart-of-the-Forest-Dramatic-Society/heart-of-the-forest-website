@@ -3,13 +3,13 @@
 import { Menu } from "lucide-react";
 import type { Route } from "next";
 import { useRouter } from "next/navigation";
-import { buttonVariants } from "../ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 
 export function MobileNavBtn() {
   const router = useRouter();

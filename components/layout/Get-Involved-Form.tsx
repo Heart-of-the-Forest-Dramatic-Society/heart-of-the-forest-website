@@ -1,11 +1,10 @@
 "use client";
 
-import type { FormEvent } from "react";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Button } from "../ui/button";
-import { Checkbox } from "../ui/checkbox";
 import {
   Select,
   SelectContent,
@@ -13,13 +12,13 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../ui/select";
+} from "@/components/ui/select";
 
 export default function GetInvolvedForm() {
   const [checked, setChecked] = useState(false);
   const [interest, setInterest] = useState("");
 
-  const FormAction = (event: FormEvent<HTMLFormElement>) => {
+  const FormAction = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
@@ -28,14 +27,15 @@ export default function GetInvolvedForm() {
     console.log("Email:", formData.get("email"));
     console.log("Areas of Interest:", interest ? [interest] : []);
     if (checked) {
+      console.log("Signing up a child under 18");
       console.log("Child's Name:", formData.get("childName"));
     }
   };
 
   return (
-    <div className="relative flex items-center justify-center min-h-[calc(h-screen-250px)]">
-      <div className="w-full p-6 rounded-lg shadow-md">
-        <div className="space-y-1">
+    <div className="relative flex items-center justify-center min-h-[calc(100dvh-14rem)]">
+      <div className="w-full p-6 rounded-lg shadow-md ">
+        <div className="space-y-1 ">
           <h1>Get Involved</h1>
           <p className="text-muted-foreground">
             Fill out the form below to get involved with our organization.
